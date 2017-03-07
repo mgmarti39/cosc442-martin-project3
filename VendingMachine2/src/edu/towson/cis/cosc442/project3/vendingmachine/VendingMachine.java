@@ -173,7 +173,7 @@ public class VendingMachine {
 		boolean returnCode = false;
 		VendingMachineItem item = getItem(code);
 		if(( item != null ) && ( this.balance >= item.getPrice() )) {
-			removeItem(code);
+			removeItem(code); 
 			this.balance -= item.getPrice();
 			returnCode = true;
 		}
